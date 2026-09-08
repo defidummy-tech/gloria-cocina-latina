@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colombia-inspired warm palette */
+  --color-chili: #7A1E1E;
+  --color-chili-dark: #571212;
+  --color-chili-light: #A6413B;
+  --color-amber: #F6C445;
+  --color-amber-light: #FBDD8A;
+  --color-jungle: #1E6E43;
+  --color-jungle-light: #3E9968;
+  --color-cream: #FBF6EE;
+  --color-cream-dark: #F1E7D6;
+  --color-charcoal: #2A211C;
+  --color-warm-gray: #6E6259;
+
+  --font-heading: "Playfair Display", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-script: "Caveat", "Playfair Display", cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-charcoal);
+  background-color: var(--color-cream);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--color-cream-dark); }
+::-webkit-scrollbar-thumb { background: var(--color-jungle-light); border-radius: 4px; }
+
+.yarl__root {
+  --yarl__color_backdrop: rgba(18, 10, 8, 0.92);
+}
